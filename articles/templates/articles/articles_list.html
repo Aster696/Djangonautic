@@ -10,6 +10,17 @@
     </head>
     <body>
         <h1>Article List</h1>
+        <div class="articles">
+            {% for article in articles %}
+                <div class="article">
+                    <h2>
+                        <a href="#">{{article.title}}</a>
+                    </h2>
+                    <p>{{article.snippets}}</p>
+                    <p>{{article.date}}</p>
+                </div>
+            {% endfor %}
+        </div>
         <script src="" async defer></script>
     </body>
 </html>
